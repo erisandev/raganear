@@ -37,10 +37,16 @@ yarn-error.log*
 pnpm-debug.log*
 *.log
 
-# Media & Video recordings
+# Media & Video recordings & scripts
 demo-videos/
 worker-daemon/recordings/
 worker-daemon/audio-temp/
+worker-daemon/record-*.js
+worker-daemon/*voice*.ps1
+worker-daemon/*durations*.js
+worker-daemon/check-*.py
+worker-daemon/list-voices.ps1
+worker-daemon/test-*.ps1
 *.webm
 *.mp4
 *.wav
