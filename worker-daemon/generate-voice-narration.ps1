@@ -1,7 +1,7 @@
-# Generate Voice Narration for RAGA Protocol Demo
+# Generate Voice Narration for RAGA Protocol Demo (Male Voice: Microsoft David Desktop)
 Add-Type -AssemblyName System.Speech
 $synth = New-Object System.Speech.Synthesis.SpeechSynthesizer
-$synth.SelectVoice("Microsoft Zira Desktop")
+$synth.SelectVoice("Microsoft David Desktop")
 $synth.Rate = 0  # Normal natural speaking rate
 
 $audioDir = "D:\Hackathon Project\raga-nearhack\worker-daemon\audio-temp"
