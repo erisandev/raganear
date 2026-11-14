@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono:wght@400;500;600;700;800&family=Archivo:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #080718;
+  --foreground: #f8fafc;
+  --sega-blue: #4502FF;
+  --sega-yellow: #FFDA14;
+  --sega-green: #16A34A;
+  --sega-amber: #D97706;
+  --sega-red: #DC2626;
+}
+
+/* Strict Hard-Edged 0px Corners across all elements (Sega Design System) */
+* {
+  border-radius: 0px !important;
+}
+
+body {
+  background-color: #080718;
+  color: #f8fafc;
+  font-family: 'Archivo', sans-serif;
+  overflow-x: hidden;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Sega Arcade Cabinet CRT Scanlines & Matrix Grid */
+.tech-grid,
+.sega-arcade-grid {
+  background-color: #080718;
+  background-image:
+    linear-gradient(to right, rgba(40, 32, 105, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(40, 32, 105, 0.45) 1px, transparent 1px),
+    radial-gradient(circle, rgba(69, 2, 255, 0.3) 1px, transparent 1px);
+  background-size: 32px 32px, 32px 32px, 16px 16px;
+  background-position: -1px -1px, -1px -1px, 7px 7px;
+}
+
+/* 16-Bit ROM Cartridge Fine Grid */
+.blueprint-card-grid,
+.sega-card-grid {
+  background-image:
+    linear-gradient(to right, rgba(69, 2, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(69, 2, 255, 0.12) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* VT323 Pixel Typeface Helpers */
+.font-pixel,
+.font-display {
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.05em;
+}
+
+/* JetBrains Monospace Helper */
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================================
+   SEGA ARCADE PHYSICAL PRESS BUTTONS
+   Chunky buttons with physical 3px/2px solid offset blocks
+   ============================================================================ */
+.sega-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'VT323', monospace;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.06s ease, box-shadow 0.06s ease, background-color 0.1s ease;
+}
+
+.sega-btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.sega-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+.sega-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  box-shadow: 1px 1px 0px #000000;
+  transform: none;
+}
+
+/* Sega Primary Button: Electric Sega Indigo Blue (#4502FF) */
+.sega-btn-primary {
+  background-color: #4502FF;
+  color: #FFFFFF;
+  border-color: #000000;
+  box-shadow: 3px 3px 0px #000000;
+}
+.sega-btn-primary:hover:not(:disabled) {
+  background-color: #3800d4;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+/* Sega Secondary / Sonic Yellow Button (#FFDA14) */
+.sega-btn-yellow,
+.sega-btn-secondary {
+  background-color: #FFDA14;
+  color: #111827;
+  border-color: #000000;
+  font-weight: 800;
+  box-shadow: 3px 3px 0px #000000;
+}
+.sega-btn-yellow:hover:not(:disabled),
+.sega-btn-secondary:hover:not(:disabled) {
+  background-color: #e6c400;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+/* Sega Success Green Button (#16A34A) */
+.sega-btn-success {
+  background-color: #16A34A;
+  color: #FFFFFF;
+  border-color: #000000;
+  box-shadow: 3px 3px 0px #000000;
+}
+.sega-btn-success:hover:not(:disabled) {
+  background-color: #14803d;
+}
+
+/* Sega Danger Crimson Button (#DC2626) */
+.sega-btn-danger {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  border-color: #000000;
+  box-shadow: 3px 3px 0px #000000;
+}
+.sega-btn-danger:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+/* Sega Dark / Arcade Console Chassis Button */
+.sega-btn-dark {
+  background-color: #100d2b;
+  color: #f8fafc;
+  border-color: #000000;
+  box-shadow: 3px 3px 0px #000000;
+}
+.sega-btn-dark:hover:not(:disabled) {
+  background-color: #181442;
+  color: #FFFFFF;
+}
+
+/* ============================================================================
+   SEGA ARCADE CABINET CARDS & HARDWARE CHASSIS
+   ============================================================================ */
+.sega-card {
+  background-color: #100d2b;
+  border: 2px solid #282069;
+  box-shadow: 4px 4px 0px #000000;
+  position: relative;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
+}
+
+.sega-card:hover {
+  border-color: #4502FF;
+  box-shadow: 4px 4px 0px #4502FF, 6px 6px 0px #000000;
+}
+
+/* Sega Rainbow-Ringed Cabinet Trim */
+.sega-cabinet-trim {
+  border: 2px solid #4502FF;
+  box-shadow: 3px 3px 0px #FFDA14, 6px 6px 0px #000000;
+}
+
+.sega-cabinet-trim-amber {
+  border: 2px solid #FFDA14;
+  box-shadow: 3px 3px 0px #4502FF, 6px 6px 0px #000000;
+}
+
+/* Corner Brackets with Sega Colors */
+.corner-bracket {
+  position: relative;
+}
+.corner-bracket::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #4502FF;
+  border-left: 2px solid #4502FF;
+  pointer-events: none;
+}
+.corner-bracket::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid #4502FF;
+  border-right: 2px solid #4502FF;
+  pointer-events: none;
+}
+
+.corner-bracket-amber::before {
+  border-top: 2px solid #FFDA14;
+  border-left: 2px solid #FFDA14;
+}
+.corner-bracket-amber::after {
+  border-bottom: 2px solid #FFDA14;
+  border-right: 2px solid #FFDA14;
+}
+
+/* Custom Scrollbar - Sega Arcade Style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080718;
+}
+::-webkit-scrollbar-thumb {
+  background: #282069;
+  border: 1px solid #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4502FF;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "raga-monorepo",
+  "version": "1.0.0",
+  "description": "RAGA - NEP-171 Token-Bound Smart Accounts Representing Tradable & Rentable Autonomous AI Workers",
+  "private": true,
+  "scripts": {
+    "demo": "npm run demo:worker",
+    "demo:worker": "npm run demo --prefix worker-daemon",
+    "demo:app": "npm run dev --prefix app",
+    "dev": "npm run dev --prefix app",
+    "build": "npm run build:app",
+    "build:all": "npm run build:contracts && npm run build:worker && npm run build:app",
+    "build:contracts": "cargo build --target wasm32-unknown-unknown --release --manifest-path contracts/Cargo.toml",
+    "build:worker": "npm run build --prefix worker-daemon",
+    "build:app": "npm run build --prefix app",
+    "test:contracts": "cargo test --manifest-path contracts/Cargo.toml",
+    "test": "npm run test:contracts"
+  }
+}
