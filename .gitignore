@@ -37,6 +37,14 @@ yarn-error.log*
 pnpm-debug.log*
 *.log
 
+# Media & Video recordings
+demo-videos/
+worker-daemon/recordings/
+worker-daemon/audio-temp/
+*.webm
+*.mp4
+*.wav
+
 # OS & Editor files
 .DS_Store
 Thumbs.db
