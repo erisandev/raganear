@@ -6,7 +6,7 @@ export const LandingProblemSection: React.FC = () => {
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="max-w-3xl space-y-3">
           <span className="font-mono text-xs text-segaYellow uppercase tracking-widest font-bold block">
-            THE PARADIGM SHIFT
+            WHY RAGA // THE PARADIGM SHIFT
           </span>
           <h2 className="font-pixel text-4xl sm:text-5xl text-iceWhite uppercase leading-tight">
             A JPEG IS A CLAIM OF VALUE, NOT PRODUCTIVE CAPITAL.

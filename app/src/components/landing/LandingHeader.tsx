@@ -45,7 +45,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
             onClick={() => onScrollToSection("problem")}
             className="px-2.5 sm:px-3 py-1.5 text-steel hover:text-segaYellow hover:bg-plateHover border border-transparent hover:border-plateBorder transition-all flex items-center gap-1.5 whitespace-nowrap"
           >
-            <span className="font-pixel text-base sm:text-lg">THE PROBLEM</span>
+            <span className="font-pixel text-base sm:text-lg">WHY RAGA</span>
           </button>
 
           <button
@@ -53,7 +53,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
             className="px-2.5 sm:px-3 py-1.5 text-steel hover:text-segaYellow hover:bg-plateHover border border-transparent hover:border-plateBorder transition-all flex items-center gap-1.5 whitespace-nowrap"
           >
             <Play className="w-3.5 h-3.5 text-segaYellow" />
-            <span className="font-pixel text-base sm:text-lg">FOUR STAGES</span>
+            <span className="font-pixel text-base sm:text-lg">HOW IT WORKS</span>
           </button>
 
           <button

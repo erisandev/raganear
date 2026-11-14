@@ -7,10 +7,10 @@ export const LandingStagesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="max-w-3xl space-y-3">
           <span className="font-mono text-xs text-segaYellow uppercase tracking-widest font-bold block">
-            THE WORKFLOW ENGINE
+            HOW IT WORKS // THE WORKFLOW ENGINE
           </span>
           <h2 className="font-pixel text-4xl sm:text-5xl text-iceWhite uppercase leading-tight">
-            FOUR STAGES OF AUTONOMOUS ASSET OPERATION.
+            HOW IT WORKS: 4 STAGES OF AUTONOMOUS OPERATION.
           </h2>
           <p className="text-steel text-sm sm:text-base leading-relaxed font-sans">
             From cryptographic sub-account instantiation to nanosecond time-locked micro-leasing and automated yield settlement.
