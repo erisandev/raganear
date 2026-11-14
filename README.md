@@ -6,6 +6,8 @@ Transform static NFTs into productive, revenue-generating on-chain entities. Eve
 
 Built for **NEAR HACKATHON 2026** (Primary Track: **`nfts` — NFTs That Do Something** · Sub-Tracks: **`agents` — Agent Economy**, **`security` — AI Security & Defense**, **`open` — Open Innovation**).
 
+[![Demo Video](https://img.shields.io/badge/Demo%20Video-X%20(Twitter)-1DA1F2?style=flat-square&logo=x)](https://x.com/kiddiepop/status/2121495378990334018)
+[![Live dApp](https://img.shields.io/badge/Live%20dApp-raganear.vercel.app-000000?style=flat-square&logo=vercel)](https://raganear.vercel.app)
 [![Live Testnet Contract](https://img.shields.io/badge/NEAR%20Testnet-raga--protocol--mw93m309.testnet-0ea5e9?style=flat-square&logo=near)](https://testnet.nearblocks.io/address/raga-protocol-mw93m309.testnet)
 [![Track: NFTs That Do Something](https://img.shields.io/badge/Track-NFTs%20That%20Do%20Something%20(nfts)-10b981?style=flat-square)](https://nearhackathon.com)
 [![Rust Contract](https://img.shields.io/badge/Rust-near--sdk%20v5.30.1-orange?style=flat-square&logo=rust)](contracts/)
@@ -13,7 +15,7 @@ Built for **NEAR HACKATHON 2026** (Primary Track: **`nfts` — NFTs That Do Some
 [![Worker Daemon](https://img.shields.io/badge/Daemon-Autonomous%20Worker%20(Node.js)-3b82f6?style=flat-square&logo=typescript)](worker-daemon/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
-**[Live Testnet Contract](https://testnet.nearblocks.io/address/raga-protocol-mw93m309.testnet)** · **[Contract Initialization Tx](https://testnet.nearblocks.io/txns/FxDs3ufv47pVHzaBCb1CcXgrpLZCBkVjRgoKT4fbTYe9)** · **[Technical Architecture (docs/ARCHITECTURE.md)](docs/ARCHITECTURE.md)** · **[Implementation Specs (docs/IMPLEMENTATION.md)](docs/IMPLEMENTATION.md)**
+**[Demo Video](https://x.com/kiddiepop/status/2121495378990334018)** · **[Live dApp (raganear.vercel.app)](https://raganear.vercel.app)** · **[Live Testnet Contract](https://testnet.nearblocks.io/address/raga-protocol-mw93m309.testnet)** · **[Contract Initialization Tx](https://testnet.nearblocks.io/txns/FxDs3ufv47pVHzaBCb1CcXgrpLZCBkVjRgoKT4fbTYe9)** · **[Technical Architecture (docs/ARCHITECTURE.md)](docs/ARCHITECTURE.md)** · **[Implementation Specs (docs/IMPLEMENTATION.md)](docs/IMPLEMENTATION.md)**
 
 Companion Technical Documents:
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — System architecture, sub-account derivations, execution delegation matrix, and NEP standards compliance.
@@ -504,6 +506,11 @@ Every value below is captured from live transactions on NEAR Testnet. No simulat
 ---
 
 ## Hackathon Submission & Track Alignment
+
+* **Demo Video**: [https://x.com/kiddiepop/status/2121495378990334018](https://x.com/kiddiepop/status/2121495378990334018)
+* **Live Production dApp**: [https://raganear.vercel.app/](https://raganear.vercel.app/)
+* **Root Protocol Contract**: [`raga-protocol-mw93m309.testnet`](https://testnet.nearblocks.io/address/raga-protocol-mw93m309.testnet)
+* **GitHub Repository**: [https://github.com/erisandev/raganear](https://github.com/erisandev/raganear)
 
 ### Primary Track: `nfts` — NFTs That Do Something
 * **Track Hint**: *Build NFTs as accounts — assets that own money, earn royalties, hold inventory, carry credentials, memberships or access rights. Ownership with behavior. DYNAMIC NFTS, NEP-171, SUB-ACCOUNTS.*
